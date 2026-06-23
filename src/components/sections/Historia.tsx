@@ -75,15 +75,15 @@ export function Historia() {
               {pillars.map((pillar, index) => (
                 <div
                   key={pillar.letter}
-                  className={`grid grid-cols-[60px_1fr] items-start gap-5 border-t border-cream-light/16 py-[30px] ${
+                  className={`grid grid-cols-[48px_1fr] items-start gap-4 border-t border-cream-light/16 py-6 sm:grid-cols-[60px_1fr] sm:gap-5 sm:py-[30px] ${
                     index === pillars.length - 1 ? "border-b border-cream-light/16" : ""
                   }`}
                 >
-                  <span className="pt-1.5 font-mono text-xs tracking-[0.18em] text-gold">
+                  <span className="pt-1 font-mono text-[11px] tracking-[0.18em] text-gold sm:pt-1.5 sm:text-xs">
                     {pillar.letter}
                   </span>
                   <div>
-                    <h3 className="mb-2 font-serif text-[26px]">{pillar.title}</h3>
+                    <h3 className="mb-2 font-serif text-[22px] sm:text-[26px]">{pillar.title}</h3>
                     <p className="max-w-[46ch] text-[15px] leading-[1.7] text-cream-light/66">
                       {pillar.body}
                     </p>
@@ -93,10 +93,10 @@ export function Historia() {
             </div>
           </div>
 
-          <div className="relative min-h-[420px] md:min-h-[560px]" data-hist-media>
+          <div className="relative mx-auto min-h-[320px] max-w-[420px] md:mx-0 md:max-w-none md:min-h-[560px]" data-hist-media>
             <div
               data-plx="8"
-              className="absolute top-0 right-0 aspect-[3/4] w-[88%] overflow-hidden border border-cream-light/16 shadow-[0_40px_80px_rgba(0,0,0,0.32)] will-change-transform"
+              className="absolute top-0 right-0 aspect-[3/4] w-[82%] overflow-hidden border border-cream-light/16 shadow-[0_40px_80px_rgba(0,0,0,0.32)] will-change-transform sm:w-[88%]"
             >
               <SiteImage src={siteImages.baristaPour} alt="" fill priority />
             </div>

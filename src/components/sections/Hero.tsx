@@ -98,41 +98,41 @@ export function Hero() {
         />
 
         <div
-          className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(28,22,15,0.6)] via-[rgba(28,22,15,0.2)] to-[rgba(28,22,15,0.82)]"
+          className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(28,22,15,0.72)] via-[rgba(28,22,15,0.35)] to-[rgba(28,22,15,0.88)] max-md:from-[rgba(28,22,15,0.78)] max-md:via-[rgba(28,22,15,0.45)]"
           aria-hidden
         />
 
-        <div className="absolute inset-0 z-[4] grid place-items-center px-[6vw] text-center">
+        <div className="absolute inset-0 z-[4] grid place-items-center px-4 pt-[88px] pb-16 text-center sm:px-[6vw] sm:pt-0 sm:pb-0">
           <div
             id="heroP1"
             className="col-start-1 row-start-1 max-w-[1000px] will-change-[transform,opacity]"
           >
-            <div className="mb-[26px] flex items-center justify-center gap-4 text-xs font-extrabold tracking-[0.42em] text-gold-muted uppercase">
-              <span className="h-px w-11 bg-gradient-to-r from-transparent to-gold" />
+            <div className="mb-5 flex items-center justify-center gap-2.5 text-[10px] font-extrabold tracking-[0.24em] text-gold-muted uppercase sm:mb-[26px] sm:gap-4 sm:text-xs sm:tracking-[0.42em]">
+              <span className="hidden h-px w-8 bg-gradient-to-r from-transparent to-gold sm:block sm:w-11" />
               {t("location")}
-              <span className="h-px w-11 bg-gradient-to-l from-transparent to-gold" />
+              <span className="hidden h-px w-8 bg-gradient-to-l from-transparent to-gold sm:block sm:w-11" />
             </div>
-            <h1 className="font-serif text-[clamp(46px,7.6vw,108px)] leading-[1.05] font-semibold text-balance text-cream-light">
+            <h1 className="font-serif text-[clamp(34px,9.5vw,108px)] leading-[1.06] font-semibold text-balance text-cream-light sm:text-[clamp(46px,7.6vw,108px)] sm:leading-[1.05]">
               {t("titleLine1")}
               <br />
               <em className="text-gold-light italic">{t("titleEmphasis")}</em>{" "}
               {t("titleLine2")}
             </h1>
-            <p className="mt-6 text-[clamp(16px,1.6vw,21px)] tracking-[0.01em] text-cream-light/82">
+            <p className="mt-4 max-w-[34ch] mx-auto text-[15px] leading-[1.55] tracking-[0.01em] text-cream-light/88 sm:mt-6 sm:max-w-none sm:text-[clamp(16px,1.6vw,21px)] sm:text-cream-light/82">
               {t("subtitle")}
             </p>
-            <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <div className="mt-8 flex w-full max-w-[320px] mx-auto flex-col items-stretch gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
               <a
                 href="#menu"
                 data-scroll
-                className="inline-flex items-center gap-2.5 rounded-full bg-cream px-[30px] py-[15px] text-[13.5px] font-bold tracking-[0.08em] text-ink shadow-[0_12px_32px_rgba(0,0,0,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_42px_rgba(0,0,0,0.36)]"
+                className="inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-3.5 text-[13px] font-bold tracking-[0.08em] text-ink shadow-[0_12px_32px_rgba(0,0,0,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_42px_rgba(0,0,0,0.36)] sm:w-auto sm:px-[30px] sm:py-[15px] sm:text-[13.5px]"
               >
                 {t("ctaMenu")}
               </a>
               <a
                 href="#visitanos"
                 data-scroll
-                className="inline-flex items-center gap-2.5 rounded-full border border-cream-light/42 px-[30px] py-[15px] text-[13.5px] font-bold tracking-[0.08em] text-cream-light transition-[border-color,color] duration-300 hover:border-gold-light hover:text-gold-light"
+                className="inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-cream-light/42 px-6 py-3.5 text-[13px] font-bold tracking-[0.08em] text-cream-light transition-[border-color,color] duration-300 hover:border-gold-light hover:text-gold-light sm:w-auto sm:px-[30px] sm:py-[15px] sm:text-[13.5px]"
               >
                 {t("ctaDirections")}
               </a>
@@ -156,7 +156,7 @@ export function Hero() {
 
         <div
           id="scrollCue"
-          className="absolute bottom-[34px] left-1/2 z-[5] flex -translate-x-1/2 flex-col items-center gap-2.5 font-mono text-[10.5px] tracking-[0.28em] text-cream-light/55 uppercase"
+          className="absolute bottom-6 left-1/2 z-[5] hidden -translate-x-1/2 flex-col items-center gap-2.5 font-mono text-[10.5px] tracking-[0.28em] text-cream-light/55 uppercase sm:bottom-[34px] sm:flex"
         >
           {t("scroll")}
           <span className="h-[46px] w-px animate-cue-drop bg-gradient-to-b from-gold to-transparent" />

@@ -18,7 +18,7 @@ export function Espacio() {
           {t("title")}
         </h2>
 
-        <div className="mt-[58px] grid auto-rows-[160px] grid-cols-2 gap-[18px] md:auto-rows-[200px] md:grid-cols-4">
+        <div className="mt-[58px] grid auto-rows-[130px] grid-cols-2 gap-3 sm:auto-rows-[160px] sm:gap-[18px] md:auto-rows-[200px] md:grid-cols-4">
           {espacioGallery.map((item, index) => (
             <div
               key={item.src}

@@ -30,16 +30,16 @@ export function Visitanos() {
               <ContactRow icon="✆" label={t("contactLabel")} value={t("contact")} />
             </div>
 
-            <div className="mt-9 flex flex-wrap gap-3.5">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-3.5">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-full bg-ink px-[26px] py-3.5 text-[13.5px] font-bold tracking-[0.06em] text-cream shadow-[0_10px_26px_rgba(43,36,29,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(43,36,29,0.38)]"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-[26px] py-3.5 text-[13.5px] font-bold tracking-[0.06em] text-cream shadow-[0_10px_26px_rgba(43,36,29,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(43,36,29,0.38)] sm:w-auto"
               >
                 {t("orderOnline")}
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-cream-card px-[26px] py-3.5 text-[13.5px] font-bold tracking-[0.06em] text-ink transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-gold-dark"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-cream-card px-[26px] py-3.5 text-[13.5px] font-bold tracking-[0.06em] text-ink transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-gold-dark sm:w-auto"
               >
                 {t("reserve")}
               </a>
