@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Isla Café — Tu rincón de la isla en Miami",
+    "description": "Café de especialidad, brunch caribeño y la calidez de barrio en Cutler Bay, Miami."
+  },
+  "nav": {
+    "historia": "Historia",
+    "menu": "Menú",
+    "espacio": "El Espacio",
+    "visitanos": "Visítanos",
+    "order": "Ordenar"
+  },
+  "hero": {
+    "location": "Cutler Bay · Miami",
+    "titleLine1": "Tu rincón de la",
+    "titleEmphasis": "isla",
+    "titleLine2": "en Miami",
+    "subtitle": "Café de especialidad, brunch caribeño y la calidez de barrio — recién hecho cada mañana.",
+    "ctaMenu": "Ver el menú",
+    "ctaDirections": "Cómo llegar",
+    "quote": "«Café con leche,\nhecho con calma.»",
+    "scroll": "Scroll"
+  },
+  "historia": {
+    "number": "01",
+    "label": "Nuestra historia",
+    "titleLine1": "Una esquina donde Miami se siente como",
+    "titleEmphasis": "casa",
+    "titlePunct": ".",
+    "body": "Isla nació de una cocina familiar y de la idea de que un buen café se comparte. Tostamos en lotes pequeños, horneamos cada mañana y servimos el cortadito como se debe — sin prisa, con cariño.",
+    "pillars": [
+      {
+        "letter": "A",
+        "title": "Tostado en casa",
+        "body": "Granos de origen único de fincas pequeñas, tostados aquí en pequeñas tandas cada semana."
+      },
+      {
+        "letter": "B",
+        "title": "Horneado del día",
+        "body": "Pastelitos de guayaba, croissants y tres leches, hechos a mano antes de abrir."
+      },
+      {
+        "letter": "C",
+        "title": "Mesa de barrio",
+        "body": "Un sitio para quedarse: vecinos, laptops, dominó y largas sobremesas."
+      }
+    ]
+  },
+  "menu": {
+    "number": "02",
+    "label": "La carta",
+    "titleLine1": "Café de especialidad y",
+    "titleEmphasis": "brunch",
+    "titleLine2": "caribeño.",
+    "viewFull": "Ver carta completa →",
+    "categories": [
+      {
+        "key": "cafe",
+        "label": "CAFÉ",
+        "items": [
+          {
+            "name": "Café con Leche",
+            "price": "3.5",
+            "description": "Espresso doble, leche al vapor, azúcar caramelizada."
+          },
+          {
+            "name": "Cortadito",
+            "price": "2.5",
+            "description": "El shot de Miami — espresso cortado con leche evaporada."
+          },
+          {
+            "name": "Cold Brew de la Casa",
+            "price": "4.5",
+            "description": "Reposado 18 horas, notas de cacao y caña."
+          }
+        ]
+      },
+      {
+        "key": "brunch",
+        "label": "BRUNCH",
+        "items": [
+          {
+            "name": "Tostada Isla",
+            "price": "11",
+            "description": "Masa madre, aguacate, huevo poché, ají amarillo."
+          },
+          {
+            "name": "Pan con Lechón",
+            "price": "12",
+            "description": "Cerdo asado lento, mojo, cebolla encurtida."
+          },
+          {
+            "name": "Mallorca French Toast",
+            "price": "10",
+            "description": "Mallorca dulce, custard de vainilla, guayaba."
+          }
+        ]
+      },
+      {
+        "key": "dulces",
+        "label": "DULCES",
+        "items": [
+          {
+            "name": "Pastelito de Guayaba",
+            "price": "3",
+            "description": "Hojaldre crujiente, guayaba y queso crema."
+          },
+          {
+            "name": "Croissant de Mantequilla",
+            "price": "3.5",
+            "description": "Laminado a mano, 27 capas, horneado del día."
+          },
+          {
+            "name": "Tres Leches del Día",
+            "price": "5",
+            "description": "Bizcocho esponjoso, tres leches, canela."
+          }
+        ]
+      }
+    ]
+  },
+  "espacio": {
+    "number": "03",
+    "label": "El espacio",
+    "title": "Luz de la mañana, plantas y el aroma a tostado."
+  },
+  "resenas": {
+    "number": "04",
+    "label": "Lo que dicen",
+    "featured": [
+      {
+        "quote": "El mejor cortadito al sur de Miami. Vengo cada mañana antes del trabajo.",
+        "author": "Marisol R.",
+        "role": "vecina de Cutler Bay"
+      },
+      {
+        "quote": "La tostada isla y un cold brew — mi ritual de domingo. Se siente como casa.",
+        "author": "Daniel & Cris",
+        "role": "clientes habituales"
+      },
+      {
+        "quote": "Pastelitos calientes, gente cálida y wifi de verdad. Mi oficina favorita de Miami.",
+        "author": "Priya N.",
+        "role": "freelancer"
+      }
+    ],
+    "googleRating": "4.9",
+    "googleCount": "487 reseñas en Google",
+    "reviews": [
+      {
+        "initial": "A",
+        "name": "Ana Lucía",
+        "time": "hace 1 semana",
+        "text": "Café espectacular y el personal te trata como familia. Los pastelitos vuelan, llega temprano."
+      },
+      {
+        "initial": "J",
+        "name": "Jorge M.",
+        "time": "hace 2 semanas",
+        "text": "El cold brew de la casa es otro nivel. Ambiente tranquilo, perfecto para trabajar un rato."
+      },
+      {
+        "initial": "S",
+        "name": "Sophia T.",
+        "time": "hace 3 semanas",
+        "text": "Mi nuevo lugar fijo. La mallorca french toast es un pecado. Volveré cada finde."
+      },
+      {
+        "initial": "R",
+        "name": "Rob D.",
+        "time": "hace 1 mes",
+        "text": "Auténtico, acogedor y sin pretensiones. El cortadito como lo hacía mi abuela. 10/10."
+      }
+    ]
+  },
+  "visitanos": {
+    "number": "05",
+    "label": "Visítanos",
+    "titleLine1": "Pasa cuando quieras.",
+    "titleLine2": "Siempre hay café.",
+    "addressLabel": "Dirección",
+    "address": "18901 SW 106th Ave, Unit 101\nCutler Bay, FL 33157",
+    "hoursLabel": "Horario",
+    "hours": "Lun–Vie · 7:00 – 19:00\nSáb–Dom · 8:00 – 20:00",
+    "contactLabel": "Contacto",
+    "contact": "(305) 555-0147",
+    "orderOnline": "Ordenar online",
+    "reserve": "Reservar mesa",
+    "mapTitle": "Mapa de Isla Café — 18901 SW 106th Ave, Cutler Bay"
+  },
+  "newsletter": {
+    "title": "Recibe el especial de la semana.",
+    "body": "Nuevos tostados, brunch de temporada y noches de música — sin spam, solo lo bueno.",
+    "placeholder": "tu@correo.com",
+    "submit": "Suscribirme",
+    "thanks": "¡Gracias! ☕"
+  },
+  "faq": {
+    "number": "06",
+    "label": "Preguntas",
+    "items": [
+      {
+        "question": "¿Aceptan grupos o reservas?",
+        "answer": "Claro. Para grupos de 6+ recomendamos reservar. Escríbenos por DM o llama y te guardamos la mesa grande junto a la ventana."
+      },
+      {
+        "question": "¿Tienen opciones veganas y sin gluten?",
+        "answer": "Sí — leche de avena y coco sin recargo, tostadas sin gluten y varias opciones de brunch plant-based. Pregunta al equipo por el especial del día."
+      },
+      {
+        "question": "¿Venden el café en grano?",
+        "answer": "Tostamos cada semana y vendemos bolsas de 340g en la barra y online. Pregunta por la suscripción mensual: te llega recién tostado a casa."
+      },
+      {
+        "question": "¿Hay wifi y enchufes para trabajar?",
+        "answer": "Wifi rápido y gratis, enchufes en casi todas las mesas. Solo pedimos liberar las mesas grandes en la hora pico del brunch (sáb–dom 10–13h)."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Tu rincón de la isla en Cutler Bay. Café tostado en casa, brunch caribeño y mucha calma.",
+    "explore": "Explorar",
+    "follow": "Síguenos",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "tiktok": "TikTok",
+    "copyright": "© 2026 ISLA CAFÉ · CUTLER BAY",
+    "madeIn": "HECHO CON ☕ EN MIAMI"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Isla Café — Your island corner in Miami",
+    "description": "Specialty coffee, Caribbean brunch, and neighborhood warmth in Cutler Bay, Miami."
+  },
+  "nav": {
+    "historia": "Our Story",
+    "menu": "Menu",
+    "espacio": "The Space",
+    "visitanos": "Visit Us",
+    "order": "Order"
+  },
+  "hero": {
+    "location": "Cutler Bay · Miami",
+    "titleLine1": "Your corner of the",
+    "titleEmphasis": "island",
+    "titleLine2": "in Miami",
+    "subtitle": "Specialty coffee, Caribbean brunch, and neighborhood warmth — made fresh every morning.",
+    "ctaMenu": "See the menu",
+    "ctaDirections": "Get directions",
+    "quote": "«Café con leche,\nmade with calm.»",
+    "scroll": "Scroll"
+  },
+  "historia": {
+    "number": "01",
+    "label": "Our story",
+    "titleLine1": "A corner where Miami feels like",
+    "titleEmphasis": "home",
+    "titlePunct": ".",
+    "body": "Isla was born from a family kitchen and the idea that good coffee is meant to be shared. We roast in small batches, bake every morning, and serve the cortadito the right way — unhurried, with care.",
+    "pillars": [
+      {
+        "letter": "A",
+        "title": "Roasted in-house",
+        "body": "Single-origin beans from small farms, roasted here in small batches every week."
+      },
+      {
+        "letter": "B",
+        "title": "Baked daily",
+        "body": "Guava pastelitos, croissants, and tres leches, handmade before we open."
+      },
+      {
+        "letter": "C",
+        "title": "Neighborhood table",
+        "body": "A place to stay awhile: neighbors, laptops, dominoes, and long conversations."
+      }
+    ]
+  },
+  "menu": {
+    "number": "02",
+    "label": "The menu",
+    "titleLine1": "Specialty coffee and Caribbean",
+    "titleEmphasis": "brunch",
+    "titleLine2": ".",
+    "viewFull": "View full menu →",
+    "categories": [
+      {
+        "key": "cafe",
+        "label": "COFFEE",
+        "items": [
+          {
+            "name": "Café con Leche",
+            "price": "3.5",
+            "description": "Double espresso, steamed milk, caramelized sugar."
+          },
+          {
+            "name": "Cortadito",
+            "price": "2.5",
+            "description": "Miami's signature shot — espresso cut with evaporated milk."
+          },
+          {
+            "name": "House Cold Brew",
+            "price": "4.5",
+            "description": "Steeped 18 hours, notes of cacao and cane."
+          }
+        ]
+      },
+      {
+        "key": "brunch",
+        "label": "BRUNCH",
+        "items": [
+          {
+            "name": "Tostada Isla",
+            "price": "11",
+            "description": "Sourdough, avocado, poached egg, ají amarillo."
+          },
+          {
+            "name": "Pan con Lechón",
+            "price": "12",
+            "description": "Slow-roasted pork, mojo, pickled onion."
+          },
+          {
+            "name": "Mallorca French Toast",
+            "price": "10",
+            "description": "Sweet mallorca, vanilla custard, guava."
+          }
+        ]
+      },
+      {
+        "key": "dulces",
+        "label": "SWEETS",
+        "items": [
+          {
+            "name": "Guava Pastelito",
+            "price": "3",
+            "description": "Flaky puff pastry, guava and cream cheese."
+          },
+          {
+            "name": "Butter Croissant",
+            "price": "3.5",
+            "description": "Hand-laminated, 27 layers, baked fresh daily."
+          },
+          {
+            "name": "Tres Leches of the Day",
+            "price": "5",
+            "description": "Sponge cake, three milks, cinnamon."
+          }
+        ]
+      }
+    ]
+  },
+  "espacio": {
+    "number": "03",
+    "label": "The space",
+    "title": "Morning light, plants, and the aroma of fresh roast."
+  },
+  "resenas": {
+    "number": "04",
+    "label": "What they say",
+    "featured": [
+      {
+        "quote": "The best cortadito south of Miami. I come every morning before work.",
+        "author": "Marisol R.",
+        "role": "Cutler Bay neighbor"
+      },
+      {
+        "quote": "The tostada isla and a cold brew — my Sunday ritual. It feels like home.",
+        "author": "Daniel & Cris",
+        "role": "regulars"
+      },
+      {
+        "quote": "Warm pastelitos, warm people, and real wifi. My favorite Miami office.",
+        "author": "Priya N.",
+        "role": "freelancer"
+      }
+    ],
+    "googleRating": "4.9",
+    "googleCount": "487 Google reviews",
+    "reviews": [
+      {
+        "initial": "A",
+        "name": "Ana Lucía",
+        "time": "1 week ago",
+        "text": "Spectacular coffee and the staff treats you like family. Pastelitos sell out — come early."
+      },
+      {
+        "initial": "J",
+        "name": "Jorge M.",
+        "time": "2 weeks ago",
+        "text": "The house cold brew is on another level. Calm vibe, perfect for getting work done."
+      },
+      {
+        "initial": "S",
+        "name": "Sophia T.",
+        "time": "3 weeks ago",
+        "text": "My new go-to spot. The mallorca french toast is sinful. I'll be back every weekend."
+      },
+      {
+        "initial": "R",
+        "name": "Rob D.",
+        "time": "1 month ago",
+        "text": "Authentic, welcoming, and unpretentious. Cortadito like my grandmother made. 10/10."
+      }
+    ]
+  },
+  "visitanos": {
+    "number": "05",
+    "label": "Visit us",
+    "titleLine1": "Come whenever you like.",
+    "titleLine2": "There's always coffee.",
+    "addressLabel": "Address",
+    "address": "18901 SW 106th Ave, Unit 101\nCutler Bay, FL 33157",
+    "hoursLabel": "Hours",
+    "hours": "Mon–Fri · 7:00 AM – 7:00 PM\nSat–Sun · 8:00 AM – 8:00 PM",
+    "contactLabel": "Contact",
+    "contact": "(305) 555-0147",
+    "orderOnline": "Order online",
+    "reserve": "Reserve a table",
+    "mapTitle": "Map of Isla Café — 18901 SW 106th Ave, Cutler Bay"
+  },
+  "newsletter": {
+    "title": "Get the weekly special.",
+    "body": "New roasts, seasonal brunch, and live music nights — no spam, just the good stuff.",
+    "placeholder": "you@email.com",
+    "submit": "Subscribe",
+    "thanks": "Thank you! ☕"
+  },
+  "faq": {
+    "number": "06",
+    "label": "Questions",
+    "items": [
+      {
+        "question": "Do you take groups or reservations?",
+        "answer": "Absolutely. For groups of 6+ we recommend reserving. DM us or call and we'll save you the big table by the window."
+      },
+      {
+        "question": "Do you have vegan and gluten-free options?",
+        "answer": "Yes — oat and coconut milk at no extra charge, gluten-free toast, and several plant-based brunch options. Ask the team about today's special."
+      },
+      {
+        "question": "Do you sell whole bean coffee?",
+        "answer": "We roast weekly and sell 340g bags at the bar and online. Ask about the monthly subscription — freshly roasted, delivered to your door."
+      },
+      {
+        "question": "Is there wifi and outlets for working?",
+        "answer": "Fast free wifi and outlets at most tables. We only ask that you free up the large tables during peak brunch hours (Sat–Sun 10 AM–1 PM)."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Your island corner in Cutler Bay. Coffee roasted in-house, Caribbean brunch, and plenty of calm.",
+    "explore": "Explore",
+    "follow": "Follow us",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "tiktok": "TikTok",
+    "copyright": "© 2026 ISLA CAFÉ · CUTLER BAY",
+    "madeIn": "MADE WITH ☕ IN MIAMI"
+  }
+}
