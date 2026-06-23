@@ -15,8 +15,20 @@ Open [http://localhost:3000/es](http://localhost:3000/es) or [http://localhost:3
 
 ```bash
 npm run build
-npm start
 ```
+
+This produces a static export in `out/` (used for Cloudflare Pages).
+
+## Deploy (Cloudflare Pages)
+
+In your Cloudflare Pages project settings:
+
+1. **Reconnect Git** (fix the “disconnected from Git” warning)
+2. **Build command:** `npm run build`
+3. **Build output directory:** `out`
+4. Redeploy from the latest `main` commit
+
+Production URL: [https://islacafemiami.pages.dev/es](https://islacafemiami.pages.dev/es)
 
 ## Project structure
 
