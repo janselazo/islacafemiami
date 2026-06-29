@@ -7,6 +7,7 @@
     "historia": "Historia",
     "menu": "Menú",
     "espacio": "El Espacio",
+    "instagram": "Instagram",
     "visitanos": "Visítanos",
     "order": "Ordenar"
   },
@@ -22,7 +23,7 @@
     "scroll": "Scroll"
   },
   "historia": {
-    "number": "01",
+    "number": "02",
     "label": "Nuestra historia",
     "titleLine1": "Una esquina donde Miami se siente como",
     "titleEmphasis": "casa",
@@ -47,7 +48,7 @@
     ]
   },
   "menu": {
-    "number": "02",
+    "number": "01",
     "label": "La carta",
     "titleLine1": "Café de especialidad y",
     "titleEmphasis": "brunch",
@@ -124,57 +125,30 @@
     "label": "El espacio",
     "title": "Luz de la mañana, plantas y el aroma a tostado."
   },
-  "resenas": {
+  "instagram": {
     "number": "04",
+    "label": "Instagram",
+    "title": "Recién salido del café — síguenos en Instagram.",
+    "followCta": "Seguir @islacafemiami",
+    "followAria": "Seguir a Isla Café Miami en Instagram",
+    "postAria": "Ver esta publicación en Instagram",
+    "empty": "Conecta Instagram para mostrar las últimas publicaciones aquí. Mientras tanto, síguenos en la red.",
+    "setupGuideDownload": "Descargar guía de configuración",
+    "setupGuideAria": "Descargar guía de configuración del feed de Instagram"
+  },
+  "resenas": {
+    "number": "05",
     "label": "Lo que dicen",
-    "featured": [
-      {
-        "quote": "El mejor cortadito al sur de Miami. Vengo cada mañana antes del trabajo.",
-        "author": "Marisol R.",
-        "role": "vecina de Cutler Bay"
-      },
-      {
-        "quote": "La tostada isla y un cold brew — mi ritual de domingo. Se siente como casa.",
-        "author": "Daniel & Cris",
-        "role": "clientes habituales"
-      },
-      {
-        "quote": "Pastelitos calientes, gente cálida y wifi de verdad. Mi oficina favorita de Miami.",
-        "author": "Priya N.",
-        "role": "freelancer"
-      }
-    ],
-    "googleRating": "4.9",
-    "googleCount": "487 reseñas en Google",
-    "reviews": [
-      {
-        "initial": "A",
-        "name": "Ana Lucía",
-        "time": "hace 1 semana",
-        "text": "Café espectacular y el personal te trata como familia. Los pastelitos vuelan, llega temprano."
-      },
-      {
-        "initial": "J",
-        "name": "Jorge M.",
-        "time": "hace 2 semanas",
-        "text": "El cold brew de la casa es otro nivel. Ambiente tranquilo, perfecto para trabajar un rato."
-      },
-      {
-        "initial": "S",
-        "name": "Sophia T.",
-        "time": "hace 3 semanas",
-        "text": "Mi nuevo lugar fijo. La mallorca french toast es un pecado. Volveré cada finde."
-      },
-      {
-        "initial": "R",
-        "name": "Rob D.",
-        "time": "hace 1 mes",
-        "text": "Auténtico, acogedor y sin pretensiones. El cortadito como lo hacía mi abuela. 10/10."
-      }
-    ]
+    "featuredRole": "Reseña en Google",
+    "googleReviewCount": "{count} reseñas en Google",
+    "leaveReviewCta": "Déjanos una reseña en Google",
+    "leaveReviewAria": "Dejar una reseña de Isla Café en Google",
+    "showReview": "Mostrar reseña {index}",
+    "previousReviews": "Reseñas anteriores",
+    "nextReviews": "Siguientes reseñas"
   },
   "visitanos": {
-    "number": "05",
+    "number": "06",
     "label": "Visítanos",
     "titleLine1": "Pasa cuando quieras.",
     "titleLine2": "Siempre hay café.",
@@ -196,7 +170,7 @@
     "thanks": "¡Gracias! ☕"
   },
   "faq": {
-    "number": "06",
+    "number": "07",
     "label": "Preguntas",
     "items": [
       {
@@ -217,14 +191,27 @@
       }
     ]
   },
+  "whatsapp": {
+    "aria": "Chatear con Isla Café por WhatsApp",
+    "defaultMessage": "¡Hola! Me gustaría contactar a Isla Café."
+  },
+  "order": {
+    "menuLabel": "Ordenar",
+    "uberEats": "Uber Eats",
+    "toast": "Toast",
+    "doordash": "DoorDash",
+    "grubhub": "Grubhub"
+  },
   "footer": {
     "tagline": "Tu rincón de la isla en Cutler Bay. Café tostado en casa, brunch caribeño y mucha calma.",
     "explore": "Explorar",
+    "order": "Ordenar",
     "follow": "Síguenos",
     "instagram": "Instagram",
     "facebook": "Facebook",
     "tiktok": "TikTok",
     "copyright": "© 2026 ISLA CAFÉ · CUTLER BAY",
-    "madeIn": "HECHO CON ☕ EN MIAMI"
+    "madeIn": "HECHO CON ☕ EN MIAMI",
+    "developedBy": "Desarrollado por"
   }
 }

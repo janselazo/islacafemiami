@@ -3,18 +3,22 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { SiteImage } from "@/components/ui/SiteImage";
+import { OrderMenu } from "@/components/ui/OrderMenu";
 import { Link, usePathname } from "@/i18n/navigation";
+import { orderPlatforms } from "@/lib/order";
 import { siteImages } from "@/lib/images";
 
 const navLinks = [
-  { href: "#historia", key: "historia" as const },
   { href: "#menu", key: "menu" as const },
+  { href: "#historia", key: "historia" as const },
   { href: "#espacio", key: "espacio" as const },
+  { href: "#instagram", key: "instagram" as const },
   { href: "#visitanos", key: "visitanos" as const },
 ];
 
 export function Nav() {
   const t = useTranslations("nav");
+  const order = useTranslations("order");
   const locale = useLocale();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -105,14 +109,7 @@ export function Nav() {
             </Link>
           </div>
 
-          <a
-            href="#visitanos"
-            data-scroll
-            data-nav-cta
-            className="hidden items-center gap-2 rounded-full bg-ink px-[22px] py-[11px] text-[12.5px] font-bold tracking-[0.08em] text-cream shadow-[0_10px_26px_rgba(43,36,29,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(43,36,29,0.38)] lg:inline-flex"
-          >
-            {t("order")}
-          </a>
+          <OrderMenu variant="nav" scrolled={scrolled} />
 
           <button
             type="button"
@@ -177,14 +174,25 @@ export function Nav() {
                   EN
                 </Link>
               </div>
-              <a
-                href="#visitanos"
-                data-scroll
-                onClick={() => setMobileOpen(false)}
-                className="inline-flex w-full items-center justify-center rounded-full bg-ink px-6 py-3.5 text-[13px] font-bold tracking-[0.08em] text-cream"
-              >
-                {t("order")}
-              </a>
+              <div>
+                <div className="mb-2 text-[11px] font-extrabold tracking-[0.24em] text-gold-muted uppercase">
+                  {order("menuLabel")}
+                </div>
+                <div className="flex flex-col gap-2">
+                  {orderPlatforms.map((platform) => (
+                    <a
+                      key={platform.key}
+                      href={platform.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setMobileOpen(false)}
+                      className="text-[15px] font-semibold tracking-[0.04em] text-ink"
+                    >
+                      {order(platform.key)}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </>

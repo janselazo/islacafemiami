@@ -7,6 +7,7 @@
     "historia": "Our Story",
     "menu": "Menu",
     "espacio": "The Space",
+    "instagram": "Instagram",
     "visitanos": "Visit Us",
     "order": "Order"
   },
@@ -22,7 +23,7 @@
     "scroll": "Scroll"
   },
   "historia": {
-    "number": "01",
+    "number": "02",
     "label": "Our story",
     "titleLine1": "A corner where Miami feels like",
     "titleEmphasis": "home",
@@ -47,7 +48,7 @@
     ]
   },
   "menu": {
-    "number": "02",
+    "number": "01",
     "label": "The menu",
     "titleLine1": "Specialty coffee and Caribbean",
     "titleEmphasis": "brunch",
@@ -124,57 +125,30 @@
     "label": "The space",
     "title": "Morning light, plants, and the aroma of fresh roast."
   },
-  "resenas": {
+  "instagram": {
     "number": "04",
+    "label": "Instagram",
+    "title": "Fresh from the café — follow along on Instagram.",
+    "followCta": "Follow @islacafemiami",
+    "followAria": "Follow Isla Café Miami on Instagram",
+    "postAria": "View this post on Instagram",
+    "empty": "Connect Instagram to show the latest posts here. Follow us in the meantime.",
+    "setupGuideDownload": "Download setup guide",
+    "setupGuideAria": "Download Instagram feed setup guide"
+  },
+  "resenas": {
+    "number": "05",
     "label": "What they say",
-    "featured": [
-      {
-        "quote": "The best cortadito south of Miami. I come every morning before work.",
-        "author": "Marisol R.",
-        "role": "Cutler Bay neighbor"
-      },
-      {
-        "quote": "The tostada isla and a cold brew — my Sunday ritual. It feels like home.",
-        "author": "Daniel & Cris",
-        "role": "regulars"
-      },
-      {
-        "quote": "Warm pastelitos, warm people, and real wifi. My favorite Miami office.",
-        "author": "Priya N.",
-        "role": "freelancer"
-      }
-    ],
-    "googleRating": "4.9",
-    "googleCount": "487 Google reviews",
-    "reviews": [
-      {
-        "initial": "A",
-        "name": "Ana Lucía",
-        "time": "1 week ago",
-        "text": "Spectacular coffee and the staff treats you like family. Pastelitos sell out — come early."
-      },
-      {
-        "initial": "J",
-        "name": "Jorge M.",
-        "time": "2 weeks ago",
-        "text": "The house cold brew is on another level. Calm vibe, perfect for getting work done."
-      },
-      {
-        "initial": "S",
-        "name": "Sophia T.",
-        "time": "3 weeks ago",
-        "text": "My new go-to spot. The mallorca french toast is sinful. I'll be back every weekend."
-      },
-      {
-        "initial": "R",
-        "name": "Rob D.",
-        "time": "1 month ago",
-        "text": "Authentic, welcoming, and unpretentious. Cortadito like my grandmother made. 10/10."
-      }
-    ]
+    "featuredRole": "Google review",
+    "googleReviewCount": "{count} Google reviews",
+    "leaveReviewCta": "Leave us a review on Google",
+    "leaveReviewAria": "Leave a review for Isla Café on Google",
+    "showReview": "Show review {index}",
+    "previousReviews": "Previous reviews",
+    "nextReviews": "Next reviews"
   },
   "visitanos": {
-    "number": "05",
+    "number": "06",
     "label": "Visit us",
     "titleLine1": "Come whenever you like.",
     "titleLine2": "There's always coffee.",
@@ -196,7 +170,7 @@
     "thanks": "Thank you! ☕"
   },
   "faq": {
-    "number": "06",
+    "number": "07",
     "label": "Questions",
     "items": [
       {
@@ -217,14 +191,27 @@
       }
     ]
   },
+  "whatsapp": {
+    "aria": "Chat with Isla Café on WhatsApp",
+    "defaultMessage": "Hi! I'd like to get in touch with Isla Café."
+  },
+  "order": {
+    "menuLabel": "Order",
+    "uberEats": "Uber Eats",
+    "toast": "Toast",
+    "doordash": "DoorDash",
+    "grubhub": "Grubhub"
+  },
   "footer": {
     "tagline": "Your island corner in Cutler Bay. Coffee roasted in-house, Caribbean brunch, and plenty of calm.",
     "explore": "Explore",
+    "order": "Order",
     "follow": "Follow us",
     "instagram": "Instagram",
     "facebook": "Facebook",
     "tiktok": "TikTok",
     "copyright": "© 2026 ISLA CAFÉ · CUTLER BAY",
-    "madeIn": "MADE WITH ☕ IN MIAMI"
+    "madeIn": "MADE WITH ☕ IN MIAMI",
+    "developedBy": "Developed by"
   }
 }

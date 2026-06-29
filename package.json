@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "prebuild": "node scripts/fetch-instagram.mjs && node scripts/fetch-google-reviews.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",

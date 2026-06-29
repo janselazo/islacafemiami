@@ -31,6 +31,11 @@ export async function generateMetadata({
     metadataBase: new URL(
       process.env.NEXT_PUBLIC_SITE_URL ?? "https://islacafemiami.com",
     ),
+    icons: {
+      icon: siteImages.logo,
+      shortcut: siteImages.logo,
+      apple: siteImages.logo,
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),

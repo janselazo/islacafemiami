@@ -1,0 +1,63 @@
+{
+  "fetchedAt": null,
+  "source": "fallback",
+  "placeId": "",
+  "reviewUrl": "https://search.google.com/local/writereview?placeid=",
+  "rating": 4.9,
+  "reviewCount": 487,
+  "featured": [
+    {
+      "id": "seed-1",
+      "quote": "The best cortadito south of Miami. I come every morning before work.",
+      "author": "Marisol R."
+    },
+    {
+      "id": "seed-2",
+      "quote": "The tostada isla and a cold brew — my Sunday ritual. It feels like home.",
+      "author": "Daniel & Cris"
+    },
+    {
+      "id": "seed-3",
+      "quote": "Warm pastelitos, warm people, and real wifi. My favorite Miami office.",
+      "author": "Priya N."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "seed-a",
+      "name": "Ana Lucía",
+      "initial": "A",
+      "rating": 5,
+      "text": "Spectacular coffee and the staff treats you like family. Pastelitos sell out — come early.",
+      "time": "1 week ago",
+      "publishTime": ""
+    },
+    {
+      "id": "seed-j",
+      "name": "Jorge M.",
+      "initial": "J",
+      "rating": 5,
+      "text": "The house cold brew is on another level. Calm vibe, perfect for getting work done.",
+      "time": "2 weeks ago",
+      "publishTime": ""
+    },
+    {
+      "id": "seed-s",
+      "name": "Sophia T.",
+      "initial": "S",
+      "rating": 5,
+      "text": "My new go-to spot. The mallorca french toast is sinful. I'll be back every weekend.",
+      "time": "3 weeks ago",
+      "publishTime": ""
+    },
+    {
+      "id": "seed-r",
+      "name": "Rob D.",
+      "initial": "R",
+      "rating": 5,
+      "text": "Authentic, welcoming, and unpretentious. Cortadito like my grandmother made. 10/10.",
+      "time": "1 month ago",
+      "publishTime": ""
+    }
+  ]
+}
