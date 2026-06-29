@@ -77,7 +77,6 @@ export function CafeAmbientVideo({
             className="absolute inset-0 h-full w-full object-cover object-[center_42%]"
             autoPlay
             muted
-            defaultMuted
             loop
             playsInline
             preload="auto"
