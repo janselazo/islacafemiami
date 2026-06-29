@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { GOOGLE_MAPS_PLACE_URL } from "@/lib/contact";
+import { IslaMap } from "@/components/ui/IslaMap";
+import { GOOGLE_MAPS_DIRECTIONS_URL } from "@/lib/contact";
 
 export function Visitanos() {
   const t = useTranslations("visitanos");
@@ -38,7 +39,7 @@ export function Visitanos() {
                 {t("orderOnline")}
               </a>
               <a
-                href={GOOGLE_MAPS_PLACE_URL}
+                href={GOOGLE_MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("getDirectionsAria")}
@@ -49,18 +50,8 @@ export function Visitanos() {
             </div>
           </div>
 
-          <div
-            data-rv
-            className="relative min-h-[320px] overflow-hidden border border-border bg-map-bg lg:min-h-[420px]"
-          >
-            <iframe
-              title={t("mapTitle")}
-              src="https://www.google.com/maps?q=18901%20SW%20106th%20Ave%20Unit%20101%20Cutler%20Bay%20FL%2033157&output=embed"
-              className="absolute inset-0 h-full w-full border-0 saturate-[0.92] contrast-[0.98]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <div data-rv>
+            <IslaMap mapMinHeight="min-h-[320px] lg:min-h-[420px]" />
           </div>
         </div>
       </div>

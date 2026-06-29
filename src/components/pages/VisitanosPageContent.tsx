@@ -4,7 +4,8 @@ import { FormEvent, useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 import { InnerPageHeader } from "@/components/inner/InnerPageHeader";
 import { InnerSectionLabel } from "@/components/inner/InnerSectionLabel";
-import { GOOGLE_MAPS_PLACE_URL } from "@/lib/contact";
+import { IslaMap } from "@/components/ui/IslaMap";
+import { GOOGLE_MAPS_DIRECTIONS_URL } from "@/lib/contact";
 import { pickLocalized } from "@/lib/localized";
 import { siteImages } from "@/lib/images";
 
@@ -186,7 +187,7 @@ export function VisitanosPageContent() {
             </div>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
-                href={GOOGLE_MAPS_PLACE_URL}
+                href={GOOGLE_MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-3.5 text-[13px] font-bold tracking-[0.08em] text-cream shadow-[0_10px_26px_rgba(43,36,29,0.28)] transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5"
@@ -201,21 +202,8 @@ export function VisitanosPageContent() {
               </a>
             </div>
           </div>
-          <div
-            data-rv
-            className="relative min-h-[320px] overflow-hidden border border-border bg-map-bg lg:min-h-[460px]"
-          >
-            <iframe
-              title={pickLocalized(locale, {
-                es: "Mapa de Isla Café — Cutler Bay",
-                en: "Isla Café map — Cutler Bay",
-              })}
-              src="https://www.google.com/maps?q=18901%20SW%20106th%20Ave%20Unit%20101%20Cutler%20Bay%20FL%2033157&output=embed"
-              className="absolute inset-0 h-full w-full border-0 saturate-[0.92] contrast-[0.98]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <div data-rv>
+            <IslaMap />
           </div>
         </div>
       </section>

@@ -49,19 +49,19 @@ export function HistoriaPageContent() {
     },
     {
       year: "2024",
-      title: pickLocalized(locale, { es: "Abrimos la esquina", en: "We opened the corner" }),
+      title: pickLocalized(locale, { es: "Preparamos la esquina", en: "We prepare the corner" }),
       body: pickLocalized(locale, {
-        es: "Llegamos a Unit 101 en SW 106th Ave. Madera cálida, plantas, la barra a la vista y el primer cortadito servido a un vecino.",
-        en: "We arrived at Unit 101 on SW 106th Ave. Warm wood, plants, an open bar, and the first cortadito served to a neighbor.",
+        es: "Llegamos a Unit 101 en SW 106th Ave. Madera cálida, plantas y una barra diseñada para verse desde la acera.",
+        en: "We found Unit 101 on SW 106th Ave. Warm wood, plants, and a bar built to be seen from the sidewalk.",
       }),
       last: false,
     },
     {
       year: "2026",
-      title: pickLocalized(locale, { es: "Hoy", en: "Today" }),
+      title: pickLocalized(locale, { es: "Abrimos en 2026", en: "Opening in 2026" }),
       body: pickLocalized(locale, {
-        es: "Seguimos tostando cada semana y horneando cada mañana — con la misma calma con la que empezó todo.",
-        en: "We still roast every week and bake every morning — with the same calm that started it all.",
+        es: "La esquina abre sus puertas en Cutler Bay — el primer cortadito servido a un vecino, con la misma calma con la que empezó todo.",
+        en: "The corner opens its doors in Cutler Bay — the first cortadito served to a neighbor, with the same calm that started it all.",
       }),
       last: true,
     },
