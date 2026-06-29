@@ -141,7 +141,7 @@
     "label": "Lo que dicen",
     "featuredRole": "Reseña en Google",
     "googleReviewCount": "{count} reseñas en Google",
-    "leaveReviewCta": "Déjanos una reseña en Google",
+    "leaveReviewCta": "Dejar reseña",
     "leaveReviewAria": "Dejar una reseña de Isla Café en Google",
     "showReview": "Mostrar reseña {index}",
     "previousReviews": "Reseñas anteriores",
@@ -159,15 +159,9 @@
     "contactLabel": "Contacto",
     "contact": "(305) 555-0147",
     "orderOnline": "Ordenar online",
-    "reserve": "Reservar mesa",
+    "getDirections": "Buscar dirección",
+    "getDirectionsAria": "Abrir direcciones a Isla Café en Google Maps",
     "mapTitle": "Mapa de Isla Café — 18901 SW 106th Ave, Cutler Bay"
-  },
-  "newsletter": {
-    "title": "Recibe el especial de la semana.",
-    "body": "Nuevos tostados, brunch de temporada y noches de música — sin spam, solo lo bueno.",
-    "placeholder": "tu@correo.com",
-    "submit": "Suscribirme",
-    "thanks": "¡Gracias! ☕"
   },
   "faq": {
     "number": "07",

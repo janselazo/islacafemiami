@@ -2,7 +2,7 @@
   "fetchedAt": null,
   "source": "fallback",
   "placeId": "",
-  "reviewUrl": "https://search.google.com/local/writereview?placeid=",
+  "reviewUrl": "https://www.google.com/maps/search/?api=1&query=Isla+Caf%C3%A9+18901+SW+106th+Ave+Unit+101+Cutler+Bay+FL+33157",
   "rating": 4.9,
   "reviewCount": 487,
   "featured": [
@@ -13,7 +13,7 @@
     },
     {
       "id": "seed-2",
-      "quote": "The tostada isla and a cold brew — my Sunday ritual. It feels like home.",
+      "quote": "The tostada isla and a cold brew — my Sunday ritual.\nIt feels like home.",
       "author": "Daniel & Cris"
     },
     {

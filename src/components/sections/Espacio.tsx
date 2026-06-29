@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { SiteImage } from "@/components/ui/SiteImage";
+import { CafeAmbientVideo } from "@/components/ui/CafeAmbientVideo";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { espacioGallery } from "@/lib/images";
 
@@ -17,6 +18,8 @@ export function Espacio() {
         >
           {t("title")}
         </h2>
+
+        <CafeAmbientVideo className="mt-[58px] aspect-[16/9] min-h-[220px] sm:min-h-[280px] lg:min-h-[360px]" />
 
         <div className="mt-[58px] grid auto-rows-[130px] grid-cols-2 gap-3 sm:auto-rows-[160px] sm:gap-[18px] md:auto-rows-[200px] md:grid-cols-4">
           {espacioGallery.map((item, index) => (

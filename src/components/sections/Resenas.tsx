@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import {
   formatStarRating,
   GOOGLE_REVIEW_URL,
@@ -11,26 +12,32 @@ import {
 } from "@/lib/google-reviews";
 import { reviewAvatarColors } from "@/lib/images";
 
+const FEATURED_INTERVAL_MS = 6000;
+const CAROUSEL_INTERVAL_MS = 5000;
+
 export function Resenas() {
   const t = useTranslations("resenas");
   const { featured, reviews, rating, reviewCount } = googleReviews;
+  const reducedMotion = useReducedMotion();
   const [active, setActive] = useState(0);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const reviewUrl = GOOGLE_REVIEW_URL;
 
   useEffect(() => {
-    if (featured.length === 0) {
+    if (featured.length === 0 || reducedMotion) {
       return;
     }
 
     let timer = setInterval(() => {
       setActive((current) => (current + 1) % featured.length);
-    }, 6000);
+    }, FEATURED_INTERVAL_MS);
 
     const section = document.querySelector("#resenas");
     const pause = () => clearInterval(timer);
     const resume = () => {
       timer = setInterval(() => {
         setActive((current) => (current + 1) % featured.length);
-      }, 6000);
+      }, FEATURED_INTERVAL_MS);
     };
 
     section?.addEventListener("mouseenter", pause);
@@ -41,18 +48,72 @@ export function Resenas() {
       section?.removeEventListener("mouseenter", pause);
       section?.removeEventListener("mouseleave", resume);
     };
-  }, [featured.length]);
+  }, [featured.length, reducedMotion]);
+
+  useEffect(() => {
+    if (reducedMotion || reviews.length <= 1) {
+      return;
+    }
+
+    const track = trackRef.current;
+    if (!track) return;
+
+    let paused = false;
+
+    const scrollNext = () => {
+      if (paused) return;
+
+      const card = track.querySelector("article");
+      if (!card) return;
+
+      const step = card.getBoundingClientRect().width + 18;
+      const maxScroll = track.scrollWidth - track.clientWidth;
+
+      if (maxScroll <= 0) return;
+
+      if (track.scrollLeft >= maxScroll - 4) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+
+      track.scrollBy({ left: step, behavior: "smooth" });
+    };
+
+    const timer = setInterval(scrollNext, CAROUSEL_INTERVAL_MS);
+    const pause = () => {
+      paused = true;
+    };
+    const resume = () => {
+      paused = false;
+    };
+
+    track.addEventListener("mouseenter", pause);
+    track.addEventListener("mouseleave", resume);
+    track.addEventListener("focusin", pause);
+    track.addEventListener("focusout", resume);
+
+    return () => {
+      clearInterval(timer);
+      track.removeEventListener("mouseenter", pause);
+      track.removeEventListener("mouseleave", resume);
+      track.removeEventListener("focusin", pause);
+      track.removeEventListener("focusout", resume);
+    };
+  }, [reviews.length, reducedMotion]);
 
   const scrollReviews = (direction: "prev" | "next") => {
-    const track = document.querySelector<HTMLElement>("[data-grev-track]");
+    const track = trackRef.current;
     const card = track?.querySelector("article");
     if (!track || !card) return;
+
     const step = card.getBoundingClientRect().width + 18;
     track.scrollBy({ left: direction === "next" ? step : -step, behavior: "smooth" });
   };
 
   const stars = formatStarRating(rating);
-  const reviewUrl = GOOGLE_REVIEW_URL || googleReviews.reviewUrl;
+
+  const leaveReviewButtonClass =
+    "inline-flex items-center justify-center rounded-full border border-cream-light/22 px-4 py-2.5 text-[12px] font-bold tracking-[0.1em] text-cream-light uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-light hover:text-gold-light";
 
   return (
     <section id="resenas" className="bg-ink-warm py-[clamp(90px,11vw,150px)] text-cream-light">
@@ -75,7 +136,7 @@ export function Resenas() {
                   <div className="flex gap-1 text-base tracking-[3px] text-gold-light">
                     {stars}
                   </div>
-                  <p className="max-w-[21ch] font-serif text-[clamp(24px,3vw,40px)] leading-[1.32] font-medium text-pretty italic">
+                  <p className="max-w-[min(46ch,92vw)] font-serif text-[clamp(24px,3vw,40px)] leading-[1.32] font-medium text-pretty whitespace-pre-line italic">
                     {item.quote}
                   </p>
                   <span className="text-[13px] font-bold tracking-[0.22em] text-gold-muted uppercase">
@@ -133,7 +194,7 @@ export function Resenas() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={t("leaveReviewAria")}
-                  className="hidden rounded-full border border-cream-light/22 px-4 py-2.5 text-[12px] font-bold tracking-[0.1em] text-cream-light uppercase transition-all duration-300 hover:border-gold-light hover:text-gold-light sm:inline-flex"
+                  className={leaveReviewButtonClass}
                 >
                   {t("leaveReviewCta")}
                 </a>
@@ -161,6 +222,7 @@ export function Resenas() {
 
           {reviews.length > 0 && (
             <div
+              ref={trackRef}
               data-grev-track
               className="scrollbar-none flex gap-[18px] overflow-x-auto scroll-smooth px-1 pt-1 pb-4 [scroll-snap-type:x_mandatory]"
             >
@@ -192,13 +254,13 @@ export function Resenas() {
           )}
 
           {hasGoogleReviewLink && (
-            <div data-rv className="mt-8 flex justify-center">
+            <div data-rv className="mt-8 flex justify-center sm:hidden">
               <a
                 href={reviewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("leaveReviewAria")}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-cream-light/22 bg-cream-light/8 px-6 py-3.5 text-[13px] font-bold tracking-[0.08em] text-cream-light transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-light hover:text-gold-light"
+                className={`${leaveReviewButtonClass} px-6 py-3.5 text-[13px] tracking-[0.08em]`}
               >
                 {t("leaveReviewCta")}
               </a>

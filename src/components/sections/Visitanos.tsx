@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Newsletter } from "@/components/sections/Newsletter";
+
+const DIRECTIONS_URL =
+  "https://www.google.com/maps/dir/?api=1&destination=18901+SW+106th+Ave+Unit+101+Cutler+Bay+FL+33157";
 
 export function Visitanos() {
   const t = useTranslations("visitanos");
@@ -38,10 +40,13 @@ export function Visitanos() {
                 {t("orderOnline")}
               </a>
               <a
-                href="#"
+                href={DIRECTIONS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t("getDirectionsAria")}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-cream-card px-[26px] py-3.5 text-[13.5px] font-bold tracking-[0.06em] text-ink transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-gold-dark sm:w-auto"
               >
-                {t("reserve")}
+                {t("getDirections")}
               </a>
             </div>
           </div>
@@ -60,8 +65,6 @@ export function Visitanos() {
             />
           </div>
         </div>
-
-        <Newsletter />
       </div>
     </section>
   );

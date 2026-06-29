@@ -12,7 +12,6 @@ const navLinks = [
   { href: "#menu", key: "menu" as const },
   { href: "#historia", key: "historia" as const },
   { href: "#espacio", key: "espacio" as const },
-  { href: "#instagram", key: "instagram" as const },
   { href: "#visitanos", key: "visitanos" as const },
 ];
 

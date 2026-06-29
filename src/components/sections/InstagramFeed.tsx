@@ -22,7 +22,7 @@ function InstagramIcon() {
 
 export function InstagramFeed() {
   const t = useTranslations("instagram");
-  const posts = instagramFeed.posts;
+  const posts = instagramFeed.posts.slice(0, 16);
 
   return (
     <section id="instagram" className="bg-cream py-[clamp(90px,11vw,150px)]">
@@ -38,7 +38,8 @@ export function InstagramFeed() {
 
         <div
           data-rv
-          className="mt-[58px] grid grid-cols-2 gap-3 sm:gap-[18px] md:grid-cols-4"
+          data-instagram-grid
+          className="mt-[58px] grid grid-cols-4 gap-2 sm:gap-[18px]"
         >
           {posts.map((post) => (
             <a
@@ -47,7 +48,7 @@ export function InstagramFeed() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("postAria")}
-              className="group relative aspect-square overflow-hidden border border-border"
+              className="group relative aspect-square min-w-0 overflow-hidden bg-cream-light"
             >
               <SiteImage src={post.localSrc} alt={post.alt} fill />
               <span className="absolute inset-0 flex items-center justify-center bg-ink/0 text-cream transition-colors duration-300 group-hover:bg-ink/42 group-focus-visible:bg-ink/42">

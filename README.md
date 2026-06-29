@@ -130,7 +130,7 @@ See `public/images/README.md` for the full filename list.
 - Testimonial rotator and Google review carousel (live data via Places API)
 - Leave a review on Google button
 - WhatsApp floating chat button (bottom-right)
-- FAQ accordion, newsletter form
+- FAQ accordion
 - Instagram 4×4 feed (auto-refreshed via scheduled Cloudflare rebuilds)
 - Mobile nav drawer and responsive layouts
 - `prefers-reduced-motion` support

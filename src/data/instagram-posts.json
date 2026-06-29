@@ -82,36 +82,36 @@
     {
       "id": "fallback-12",
       "permalink": "https://www.instagram.com/islacafemiami/",
-      "localSrc": "/images/hero.jpeg",
-      "alt": "Morning at Isla Café Miami",
+      "localSrc": "/images/footer-bg-poster.jpg",
+      "alt": "Evening atmosphere at Isla Café",
       "timestamp": ""
     },
     {
       "id": "fallback-13",
       "permalink": "https://www.instagram.com/islacafemiami/",
-      "localSrc": "/images/cafe-con-leche.jpeg",
-      "alt": "Steaming café con leche",
+      "localSrc": "/images/plantas.jpeg",
+      "alt": "Greenery and natural light in the dining room",
       "timestamp": ""
     },
     {
       "id": "fallback-14",
       "permalink": "https://www.instagram.com/islacafemiami/",
-      "localSrc": "/images/tostada-isla.jpeg",
-      "alt": "Caribbean brunch at Isla Café",
+      "localSrc": "/images/mesa-al-sol.jpeg",
+      "alt": "Coffee and pastry by the window",
       "timestamp": ""
     },
     {
       "id": "fallback-15",
       "permalink": "https://www.instagram.com/islacafemiami/",
-      "localSrc": "/images/salon.jpeg",
-      "alt": "Neighborhood café atmosphere",
+      "localSrc": "/images/pour-over.jpeg",
+      "alt": "Hand-brewed specialty coffee",
       "timestamp": ""
     },
     {
       "id": "fallback-16",
       "permalink": "https://www.instagram.com/islacafemiami/",
-      "localSrc": "/images/barra.jpeg",
-      "alt": "Coffee bar and morning rush",
+      "localSrc": "/images/barista-pour.jpeg",
+      "alt": "Latte art at the bar",
       "timestamp": ""
     }
   ]

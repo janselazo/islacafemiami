@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { SiteImage } from "@/components/ui/SiteImage";
 import { OrderMenu } from "@/components/ui/OrderMenu";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { siteImages } from "@/lib/images";
 
 const footerLinks = [
@@ -14,72 +12,22 @@ const footerLinks = [
   { href: "#visitanos", key: "visitanos" as const },
 ];
 
-const FOOTER_VIDEO = "/videos/footer-bg.mp4";
-const FOOTER_POSTER = "/images/footer-bg-poster.jpg";
-
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
-  const reducedMotion = useReducedMotion();
-  const footerRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const footer = footerRef.current;
-    if (!footer) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { rootMargin: "240px 0px" },
-    );
-
-    observer.observe(footer);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video || reducedMotion || !inView) {
-      video?.pause();
-      return;
-    }
-
-    video.play().catch(() => {});
-  }, [inView, reducedMotion]);
-
-  const showVideo = !reducedMotion && inView;
 
   return (
-    <footer
-      ref={footerRef}
-      className="relative overflow-hidden py-[clamp(60px,7vw,90px)] pb-10 text-cream-light"
-    >
+    <footer className="relative overflow-hidden py-[clamp(60px,7vw,90px)] pb-10 text-cream-light">
       <div className="absolute inset-0 bg-ink-deep" aria-hidden="true">
         <SiteImage
-          src={FOOTER_POSTER}
+          src={siteImages.footerBg}
           alt=""
           fill
-          className="object-cover opacity-90"
+          className="object-cover object-[center_42%]"
         />
       </div>
 
-      {showVideo && (
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          muted
-          loop
-          playsInline
-          preload="none"
-          poster={FOOTER_POSTER}
-          aria-hidden="true"
-        >
-          <source src={FOOTER_VIDEO} type="video/mp4" />
-        </video>
-      )}
-
-      <div className="absolute inset-0 bg-ink-deep/70" aria-hidden="true" />
+      <div className="absolute inset-0 bg-ink-deep/72" aria-hidden="true" />
 
       <div className="relative z-[1] mx-auto max-w-[1240px] px-[clamp(20px,5vw,64px)]">
         <div

@@ -11,6 +11,7 @@ export const siteImages = {
   plantas: "/images/plantas.jpeg",
   mesaAlSol: "/images/mesa-al-sol.jpeg",
   pourOver: "/images/pour-over.jpeg",
+  footerBg: "/images/footer-bg.png",
 } as const;
 
 export type SiteImageKey = keyof typeof siteImages;
