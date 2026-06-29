@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { HeroCanvas } from "@/components/sections/HeroCanvas";
 import { CafeAmbientVideo } from "@/components/ui/CafeAmbientVideo";
 import { GOOGLE_MAPS_PLACE_URL } from "@/lib/contact";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
@@ -93,10 +92,8 @@ export function Hero() {
           className="absolute inset-0 z-0 will-change-[transform,opacity]"
         />
 
-        <HeroCanvas overlayOnly />
-
         <div
-          className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(28,22,15,0.72)] via-[rgba(28,22,15,0.35)] to-[rgba(28,22,15,0.88)] max-md:from-[rgba(28,22,15,0.78)] max-md:via-[rgba(28,22,15,0.45)]"
+          className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(28,22,15,0.62)] via-[rgba(28,22,15,0.22)] to-[rgba(28,22,15,0.78)] max-md:from-[rgba(28,22,15,0.68)] max-md:via-[rgba(28,22,15,0.28)]"
           aria-hidden
         />
 

@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SiteImage } from "@/components/ui/SiteImage";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
-const CAFE_VIDEO = "/videos/footer-bg.mp4";
-const CAFE_VIDEO_POSTER = "/images/footer-bg-poster.jpg";
+export const CAFE_VIDEO = "/videos/footer-bg.mp4";
+export const CAFE_VIDEO_POSTER = "/images/footer-bg-poster.jpg";
 
 type CafeAmbientVideoProps = {
   className?: string;
@@ -22,21 +22,7 @@ export function CafeAmbientVideo({
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [inView, setInView] = useState(variant === "hero");
-  const [videoReady, setVideoReady] = useState(false);
   const isHero = variant === "hero";
-
-  const playVideo = useCallback(async () => {
-    const video = videoRef.current;
-    if (!video || reducedMotion) return;
-
-    try {
-      video.muted = true;
-      await video.play();
-      setVideoReady(true);
-    } catch {
-      setVideoReady(false);
-    }
-  }, [reducedMotion]);
 
   useEffect(() => {
     if (isHero) return;
@@ -54,51 +40,80 @@ export function CafeAmbientVideo({
   }, [isHero]);
 
   useEffect(() => {
-    if (!inView || reducedMotion) {
-      videoRef.current?.pause();
-      if (reducedMotion) setVideoReady(false);
+    const video = videoRef.current;
+    if (!video || reducedMotion || !inView) {
+      video?.pause();
       return;
     }
 
-    void playVideo();
-  }, [inView, reducedMotion, playVideo]);
+    video.muted = true;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay blocked — poster remains visible via the video element.
+      });
+    }
+  }, [inView, reducedMotion, isHero]);
 
-  const showPoster = reducedMotion || !videoReady;
+  if (isHero) {
+    return (
+      <div
+        ref={containerRef}
+        id={id}
+        data-hero-img
+        className={`relative overflow-hidden bg-ink-deep ${className}`}
+      >
+        {reducedMotion ? (
+          <SiteImage
+            src={CAFE_VIDEO_POSTER}
+            alt=""
+            fill
+            className="object-cover object-[center_42%]"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            src={CAFE_VIDEO}
+            className="absolute inset-0 h-full w-full object-cover object-[center_42%]"
+            autoPlay
+            muted
+            defaultMuted
+            loop
+            playsInline
+            preload="auto"
+            poster={CAFE_VIDEO_POSTER}
+            aria-hidden="true"
+          />
+        )}
+      </div>
+    );
+  }
 
   return (
     <div
       ref={containerRef}
-      id={id}
-      {...(isHero ? { "data-hero-img": true } : { "data-rv": true })}
-      className={`relative overflow-hidden bg-ink-deep ${isHero ? "" : "border border-border"} ${className}`}
+      data-rv
+      className={`relative overflow-hidden border border-border bg-ink-deep ${className}`}
     >
       <SiteImage
         src={CAFE_VIDEO_POSTER}
         alt=""
         fill
-        className={`object-cover transition-opacity duration-500 ${isHero ? "object-[center_42%]" : "object-center"} ${showPoster ? "opacity-100" : "opacity-0"}`}
+        className="object-cover object-center"
       />
 
-      {!reducedMotion && (
+      {!reducedMotion && inView && (
         <video
           ref={videoRef}
-          className={`absolute inset-0 z-[1] h-full w-full object-cover ${isHero ? "object-[center_42%]" : "object-center"} ${videoReady ? "opacity-100" : "opacity-0"} transition-opacity duration-500`}
+          src={CAFE_VIDEO}
+          className="absolute inset-0 h-full w-full object-cover object-center"
           muted
           loop
           playsInline
-          autoPlay={isHero}
-          preload={isHero ? "auto" : inView ? "auto" : "none"}
+          preload="auto"
           poster={CAFE_VIDEO_POSTER}
           aria-hidden="true"
-          onLoadedData={() => {
-            void playVideo();
-          }}
-          onCanPlay={() => {
-            void playVideo();
-          }}
-        >
-          <source src={CAFE_VIDEO} type="video/mp4" />
-        </video>
+        />
       )}
     </div>
   );
