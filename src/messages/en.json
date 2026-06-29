@@ -7,7 +7,7 @@
     "home": "Home",
     "historia": "Our Story",
     "menu": "Menu",
-    "espacio": "The Space",
+    "espacio": "Local",
     "instagram": "Instagram",
     "visitanos": "Visit Us",
     "order": "Order"
@@ -125,7 +125,7 @@
   },
   "espacio": {
     "number": "03",
-    "label": "The space",
+    "label": "Local",
     "title": "Morning light, plants, and the aroma of fresh roast.",
     "cta": "Learn more",
     "ctaAria": "Go to Visit Us to learn more about Isla Café"
@@ -224,7 +224,7 @@
       "description": "Full menu of specialty coffee, iced drinks, Caribbean brunch, and artisan bakery."
     },
     "espacio": {
-      "title": "The Space — Isla Café Miami",
+      "title": "Local — Isla Café Miami",
       "description": "Discover Isla Café's shop: the bar, dining room, terrace, and everything that makes the space special."
     },
     "visitanos": {

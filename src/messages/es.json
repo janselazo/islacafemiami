@@ -7,7 +7,7 @@
     "home": "Inicio",
     "historia": "Historia",
     "menu": "Menú",
-    "espacio": "El Espacio",
+    "espacio": "Local",
     "instagram": "Instagram",
     "visitanos": "Visítanos",
     "order": "Ordenar"
@@ -125,7 +125,7 @@
   },
   "espacio": {
     "number": "03",
-    "label": "El espacio",
+    "label": "Local",
     "title": "Luz de la mañana, plantas y el aroma a tostado.",
     "cta": "Aprender más",
     "ctaAria": "Visitar la sección Visítanos para conocer más sobre Isla Café"
@@ -224,7 +224,7 @@
       "description": "Carta completa de café de especialidad, bebidas frías, brunch caribeño y panadería artesanal."
     },
     "espacio": {
-      "title": "El Espacio — Isla Café Miami",
+      "title": "Local — Isla Café Miami",
       "description": "Conoce el local de Isla Café: la barra, el salón, la terraza y todo lo que hace especial el espacio."
     },
     "visitanos": {

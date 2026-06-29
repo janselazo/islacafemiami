@@ -112,7 +112,7 @@ export function EspacioPageContent() {
     <>
       <InnerPageHeader
         number="03"
-        label={pickLocalized(locale, { es: "El espacio", en: "The space" })}
+        label="Local"
         titleBefore={pickLocalized(locale, {
           es: "Luz de la mañana, plantas y el aroma a",
           en: "Morning light, plants, and the scent of",
