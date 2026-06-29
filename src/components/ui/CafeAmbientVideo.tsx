@@ -87,8 +87,8 @@ export function CafeAmbientVideo({
           <video
             ref={videoRef}
             src={CAFE_VIDEO}
-            width={960}
-            height={534}
+            width={1280}
+            height={712}
             className="absolute inset-0 z-[1] block h-full w-full object-cover object-[center_42%]"
             autoPlay
             muted
@@ -120,8 +120,8 @@ export function CafeAmbientVideo({
         <video
           ref={videoRef}
           src={CAFE_VIDEO}
-          width={960}
-          height={534}
+          width={1280}
+          height={712}
           className="absolute inset-0 z-[1] block h-full w-full object-cover object-center"
           muted
           loop
